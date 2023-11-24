@@ -4,7 +4,7 @@ from openai import OpenAI
 
 def ChatGPT():  
   client = OpenAI(
-    api_key="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"
+    api_key="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"
   )
   completion = client.chat.completions.create(
     model="gpt-3.5-turbo-1106",
