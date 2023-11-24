@@ -3,18 +3,19 @@ import asyncio
 from openai import OpenAI
 
 def ChatGPT():  
-  client = OpenAI(
-    api_key="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"
-  )
-  completion = client.chat.completions.create(
-    model="gpt-3.5-turbo-1106",
-    messages=[
-      {"role": "system", "content": "사람 이름을 말하면 그사람의 명언을 알려줘."},
-      {"role": "user", "content": " 이순신 장군."}
-    ],
-  )
-  print(completion.choices[0].message.content)
-  return completion.choices[0].message.content
+  # client = OpenAI(
+  #   api_key="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"
+  # )
+  # completion = client.chat.completions.create(
+  #   model="gpt-3.5-turbo-1106",
+  #   messages=[
+  #     {"role": "system", "content": "사람 이름을 말하면 그사람의 명언을 알려줘."},
+  #     {"role": "user", "content": " 이순신 장군."}
+  #   ],
+  # )
+  # print(completion.choices[0].message.content)
+  # return completion.choices[0].message.content
+  return 'openAI api 키를 git에 올리면 해당 key가 삭제되어 정상 작동시킬수가 없습니다...'
 
 def TelegramSend(str):
   token = "6833983891:AAGQNZuPAmYgRU4beRzTq-mE2hoMKvG13io"
